@@ -1,4 +1,5 @@
-## Table of Contents
+# Table of Contents
+
 - **[Overview](#Overview)**
 
 - **[Project Plan](#Project-Plan)**
