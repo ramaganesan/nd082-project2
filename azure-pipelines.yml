@@ -46,6 +46,7 @@ stages:
           *.sh
           *.txt
           Makefile
+          .artifactignore
         targetFolder: $(projectBuild)
         cleanTargetFolder: true # Optional
         overWrite: true # Optional
