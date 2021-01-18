@@ -1,5 +1,5 @@
-.git
-screen-shots/
-project-docs/
-.github
-.azure
+**/*
+!*.py
+!*.joblib
+!Makefile
+!requirements.txt
