@@ -169,6 +169,7 @@ Azure App service provides ability to view the application logs. Application log
     ```bash
         az webapp log tail --name rg-nd082-proj2 --resource-group nd082-project2-rg
     ```
+![Screenshot of Logs](screen-shots/Application-AZ-App-Log.JPG)
 
 ### Github Actions
 
