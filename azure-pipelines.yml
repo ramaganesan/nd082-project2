@@ -21,6 +21,9 @@ variables:
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
+
+  # Project Build Dir
+  projectBuild: $(projectRoot)/build
   
   # Python version: 3.7
   pythonVersion: '3.7'
@@ -33,6 +36,21 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
+    - task: CopyFiles@2
+      displayName: Copy Src code to build dir
+      inputs:
+        sourceFolder: $(System.DefaultWorkingDirectory)
+        contents: |
+          *.py
+          *.joblib
+          *.sh
+          *.txt
+          Makefile
+        targetFolder: $(projectBuild)
+        cleanTargetFolder: true # Optional
+        overWrite: true # Optional
+        flattenFolders: false # Optional
+        preserveTimestamp: false # Optional
     - task: UsePythonVersion@0
       inputs:
         versionSpec: '$(pythonVersion)'
@@ -44,13 +62,13 @@ stages:
         python -m pip install --upgrade pip
         pip install setup
         pip install -r requirements.txt
-      workingDirectory: $(projectRoot)
+      workingDirectory: $(projectBuild)
       displayName: "Install requirements"
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
-        rootFolderOrFile: '$(projectRoot)'
+        rootFolderOrFile: '$(projectBuild)'
         includeRootFolder: false
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
