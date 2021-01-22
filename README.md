@@ -24,6 +24,8 @@
 
     - **[Azure Pipeline App](#Azure-Pipeline-App)**
 
+- **[Build Status](#Build-Status)**
+
 - **[Enhancements](#Enhancements)**
 
 - **[Demo](#Demo)**
@@ -162,6 +164,8 @@ Azure App service offers multiple ways to create a new application. In this sect
 
 ![Screenshot of Test Result](screen-shots/Application-AZ-App-Run-Test.JPG)
 
+![Screenshot of Locust Test Run](screen-shots/locust-screen-shot.JPG)
+
 **Logs of Azure Webapp:**
 
 Azure App service provides ability to view the application logs. Application logs was be accessed using Azure CLI commands
@@ -287,6 +291,10 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 - We can also Customize the pipeline to our needs as well
 
 - Now that the pipeline is configured, we can Continuously Deliver our ML Flask App
+
+## Build Status
+
+[![Actions Status](https://github.com/ramaganesan/nd082-project2/workflows/Python%20application/badge.svg)](https://github.com/ramaganesan/nd082-project2/actions)
 
 ## Enhancements
 
