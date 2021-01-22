@@ -292,6 +292,10 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 
 - Now that the pipeline is configured, we can Continuously Deliver our ML Flask App
 
+![PipelineBuild](screen-shots/AzurePipelines-7.JPG)
+
+![PipelineDeploy](screen-shots/AzurePipelines-8.JPG)
+
 ## Build Status
 
 [![Actions Status](https://github.com/ramaganesan/nd082-project2/workflows/Python%20application/badge.svg)](https://github.com/ramaganesan/nd082-project2/actions)
