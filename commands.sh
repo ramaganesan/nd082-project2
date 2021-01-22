@@ -20,13 +20,13 @@ if [[ -z "$rgGroupName" ]]  || [[ -z "$azWebappName" ]] || [[ -z "$rgExists" ]];
    exit 1
 fi
 
-if [[ ${rgExists^^} == 'NO' ]]
+if [[ ${rgExists^^} == 'NO' ]]; then
   echo "Going to create Resource Group in Azure: " $rgGroupName
   az group create --name nd082-project2-rg --location eastus
   echo "Going to Create Azure Webapp using free tier: " $azWebappName
   az webapp up --name $azWebappName --resource-group $rgGroupName --sku FREE
   echo "Azure Web App Created Successfully"
-elif
+else
   echo "Going to Create Azure Webapp using free tier: " $azWebappName
   az webapp up --name $azWebappName --resource-group $rgGroupName --sku FREE
   echo "Azure Web App Created Successfully"
