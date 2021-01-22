@@ -2,6 +2,7 @@
 
 #https://medium.com/@dirk.avery/the-bash-trap-trap-ce6083f36700
 set -e
+trap 'catch $? $LINENO' EXIT
 
 catch() {
   echo "catching!"
