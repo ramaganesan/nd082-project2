@@ -6,6 +6,8 @@
 
 - **[Architecture Diagram](#Architecture-Diagram)**
 
+- **[Build Status](#Build-Status)**
+
 - **[Instructions](#Instructions)**
   
   - **[Configuring Github](#Configuring-Github)**
@@ -23,8 +25,6 @@
     - **[Azure Pipeline Setup](#Azure-Pipeline-Setup)**
 
     - **[Azure Pipeline App](#Azure-Pipeline-App)**
-
-- **[Build Status](#Build-Status)**
 
 - **[Enhancements](#Enhancements)**
 
@@ -50,6 +50,10 @@ Main Goals
 ## Architecture Diagram
 
 [Architectural Diagram](screen-shots/architecture.png)
+
+## Build Status
+
+[![Actions Status](https://github.com/ramaganesan/nd082-project2/workflows/Python%20application/badge.svg)](https://github.com/ramaganesan/nd082-project2/actions)
 
 ## Instructions
 
@@ -296,9 +300,7 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 
 ![PipelineDeploy](screen-shots/AzurePipelines-8.JPG)
 
-## Build Status
-
-[![Actions Status](https://github.com/ramaganesan/nd082-project2/workflows/Python%20application/badge.svg)](https://github.com/ramaganesan/nd082-project2/actions)
+![PipelineStage](screen-shots/AzurePipelines-9.JPG)
 
 ## Enhancements
 
