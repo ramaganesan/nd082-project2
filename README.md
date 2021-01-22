@@ -41,9 +41,9 @@ Main Goals
 
 ## Project Plan
 
-- A link to a Trello board for the project
+- [Trello Board](https://trello.com/b/u5fJQCgH/nd082-project2-agile-sprint-board)
 - [Original Project Plan](project-docs/CI-CD-Project-Planning.xlsx)
-- [Final Project Plan](project-docs/CI-CD-Project-Planning.xlsx)
+- [Final Project Plan](project-docs/CI-CD-Project-Planning-Final.xlsx)
 
 ## Architecture Diagram
 
@@ -290,8 +290,11 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+As in any project we can do improvements
+
+- Create CI/CD project using Jenkins pipelines
+- Run tests and validation in a separate infrastructure before promoting the application code to azure web app
 
 ## Demo
 
-<TODO: Add link Screencast on YouTube>
+[CI/CD Demo Link](https://youtu.be/n3JZcgZ4Abk)
