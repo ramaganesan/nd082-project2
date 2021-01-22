@@ -11,6 +11,15 @@ catch() {
   fi
 }
 
+echo "Please Make sure if you are logged in to your subscription before running the script"
+
+read -p "Are you logged in to your Azure Subscription(Yes/No): " loginYes
+
+if [[ ${loginYes^^} != 'YES' ]]; then
+echo "Please log in to Azure Subscription"
+   exit 1
+fi
+
 read -p 'Please enter Resource Group Name: ' rgGroupName
 read -p 'Azure Web App Name: ' azWebappName
 read -p 'Please enter Yes/No if Resource Group Exists in Azure: ' rgExists
